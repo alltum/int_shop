@@ -38,13 +38,14 @@ body {
    float: left;
    margin-left: -17px;
 }
+
 .navbar__icons:last-child {
    float: right;
    margin-right: -17px;
 }
 
 section {
-   height: 1000px;
+   height: 764px;
    background: #f1e4e6;
    width: 100%;
    margin-top: 75px;
@@ -56,4 +57,33 @@ section {
    margin-right: auto;
    width: 100%;
    max-width: 1140px;
+}
+
+.footer {
+   width: 100%;
+   height: 79px;
+   background: #222222;
+}
+
+.footer__wrapper {
+   max-width: 1140px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+.copyright {
+   font-family: Lato;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   color: #fbfbfb;
+}
+
+.social-icon {
+   width: 32px;
+   height: 32px;
+   background-color: #ffffff;
+   color: black;
 }
