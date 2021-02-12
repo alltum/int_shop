@@ -11,7 +11,7 @@ body {
    height: 75px;
    background-color: #222222;
    position: fixed;
-   z-index: 1; /* inherit*/
+   z-index: 3; /* inherit*/
    top: 0;
 }
 
@@ -44,7 +44,7 @@ body {
    margin-right: -17px;
 }
 
-section--intro {
+.section--intro {
    height: 764px;
    background: #f1e4e6;
    width: 100%;
@@ -72,7 +72,6 @@ section--intro {
    width: 100%;
    height: 100%;
    display: flex;
-   align-items: center;
    align-items: center;
    justify-content: space-between;
 }
@@ -106,18 +105,18 @@ section--intro {
    justify-content: center;
 }
 
-.social-icon :hover {
+.social-icon:hover {
    background-color: #f16d7f;
    color: white;
 }
 
-.section__advantages {
+.section--advantages {
    background-color: #222222;
    width: 100%;
    display: flex;
    justify-content: center;
 }
-.section__advantages .section__wrapper {
+.section--advantages .section__wrapper {
    display: flex;
    justify-content: center;
    gap: 30px;
@@ -130,7 +129,7 @@ section--intro {
    font-family: Lato;
    align-items: center;
 }
-.advantge__icon {
+.advantage__icon {
    width: 40px;
    height: 40px;
    display: flex;
@@ -138,13 +137,13 @@ section--intro {
    background-color: #f16d7f;
    margin-bottom: 19px;
 }
-.advantge__title {
+.advantage__title {
    font-size: 20px;
    line-height: 24px;
    color: #fbfbfb;
    margin-bottom: 16px;
 }
-.advantge__subtitle {
+.advantage__subtitle {
    font-weight: 300;
    font-size: 14px;
    line-height: 17px;
@@ -152,7 +151,7 @@ section--intro {
    color: #fbfbfb;
 }
 .section--subscribe {
-   background: url("img/sub_back.svg");
+   background-image: url("img/sub_back.svg");
    background-size: cover;
    background-position: center;
 }
@@ -172,8 +171,9 @@ section--intro {
    font-size: 24px;
    line-height: 38px;
    color: #222224;
+   text-align: center;
 }
-.subscription-form__title {
+.subscription-form__subtitle {
    font-size: 18px;
    line-height: 30px;
    color: #222224;
@@ -199,4 +199,50 @@ section--intro {
    border: none;
    width: 100px;
    cursor: pointer;
+}
+/* Fetured Item Card */
+
+.card {
+   width: 100%;
+   max-width: 360px;
+   margin: 0;
+}
+.card__picture {
+   position: relative;
+   width: 100%;
+}
+.card__img {
+   max-width: 100%;
+   height: auto;
+   align-self: flex-start;
+}
+.card__hover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(58, 56, 56, 0.86);
+   opacity: 0;
+   visibility: hidden;
+   transition: opacite 0.3s ease;
+}
+
+.card__picture:hover .card__hover {
+   visibility: visible;
+   opacity: 1;
+}
+
+.card__info {
+   width: 100%;
+   height: 160px;
+   background: #f8f8f8;
+   padding: 24px 20px 20px;
+}
+
+.card__btn {
+   border: 1px solid #ffffff;
+   color: #ffffff;
+   outline: none;
+   background: none;
 }
