@@ -1,1 +1,1 @@
-# int_shщp 
+# int_shop 

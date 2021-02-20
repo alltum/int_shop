@@ -206,6 +206,8 @@ body {
    width: 100%;
    max-width: 360px;
    margin: 0;
+   border-radius: 0;
+   border: none;
 }
 .card__picture {
    position: relative;
@@ -245,4 +247,15 @@ body {
    color: #ffffff;
    outline: none;
    background: none;
+   padding: 10px 16px 9px 13px;
+   font-size: 14px;
+   font-family: Lato;
+}
+.card__btn__icon {
+   margin-right: 11px;
+}
+
+.card__btn:hover {
+   border-color: #f16d7f;
+   background-color: #f16d7f;
 }
