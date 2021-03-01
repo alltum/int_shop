@@ -155,34 +155,40 @@ body {
    background-size: cover;
    background-position: center;
 }
+
 .section--subscribe .section__wrapper {
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
+
 .ssubscription-form {
    display: flex;
    flex-direction: column;
    align-items: center;
    font-family: Lato;
 }
+
 .subscription-form__title {
    font-weight: bold;
    font-size: 24px;
    line-height: 38px;
    color: #222224;
-   text-align: center;
+   /* text-align: center; */
 }
+
 .subscription-form__subtitle {
    font-size: 18px;
    line-height: 30px;
    color: #222224;
 }
+
 .subscription-form__inputs {
    display: flex;
    align-items: center;
    justify-content: center;
 }
+
 .subscription-form__input {
    width: 256px;
    height: 49px;
@@ -191,6 +197,7 @@ body {
    border: none;
    padding: 0 22px;
 }
+
 .subscription-form__button {
    background: #f16d7f;
    border-radius: 0 25px 25px 0;
@@ -209,15 +216,18 @@ body {
    border-radius: 0;
    border: none;
 }
+
 .card__picture {
    position: relative;
    width: 100%;
 }
+
 .card__img {
    max-width: 100%;
    height: auto;
    align-self: flex-start;
 }
+
 .card__hover {
    position: absolute;
    top: 0;
@@ -251,6 +261,7 @@ body {
    font-size: 14px;
    font-family: Lato;
 }
+
 .card__btn__icon {
    margin-right: 11px;
 }
